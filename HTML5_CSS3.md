@@ -509,6 +509,82 @@ selector {
 
 ### 4.4. Propiedades básicas de presentación
 
+CSS dispone de muchas propiedades para modificar la apariencia de los elementos HTML.
+
+No es necesario memorizarlas todas. Lo importante es saber **qué queremos modificar** y encontrar la propiedad adecuada.
+
+La siguiente tabla reúne algunas de las propiedades más utilizadas para empezar a trabajar con CSS.
+
+#### Tabla de referencia de propiedades CSS
+
+| Categoría | Propiedad | ¿Para qué sirve? | Ejemplo |
+|---|---|---|---|
+| Colores | `color` | Cambia el color del texto. | `color: blue;` |
+| Colores | `background-color` | Cambia el color de fondo. | `background-color: lightgray;` |
+| Texto | `font-family` | Establece el tipo de letra. | `font-family: Arial, sans-serif;` |
+| Texto | `font-size` | Modifica el tamaño del texto. | `font-size: 18px;` |
+| Texto | `font-weight` | Modifica el grosor del texto. | `font-weight: bold;` |
+| Texto | `text-align` | Alinea el texto horizontalmente. | `text-align: center;` |
+| Texto | `text-decoration` | Añade o elimina decoraciones del texto. | `text-decoration: none;` |
+| Texto | `line-height` | Modifica la separación entre líneas. | `line-height: 1.5;` |
+| Espaciado | `margin` | Establece el espacio exterior del elemento. | `margin: 20px;` |
+| Espaciado | `padding` | Establece el espacio interior del elemento. | `padding: 15px;` |
+| Bordes | `border` | Añade un borde al elemento. | `border: 2px solid black;` |
+| Bordes | `border-radius` | Redondea las esquinas. | `border-radius: 10px;` |
+| Dimensiones | `width` | Establece la anchura del elemento. | `width: 300px;` |
+| Dimensiones | `height` | Establece la altura del elemento. | `height: 150px;` |
+| Dimensiones | `max-width` | Establece una anchura máxima. | `max-width: 800px;` |
+| Interacción | `cursor` | Cambia la apariencia del cursor. | `cursor: pointer;` |
+
+#### Ejemplo práctico: aplicar varias propiedades
+
+Partimos de este elemento HTML:
+
+```html
+<div class="tarjeta">
+    <h2>Desarrollo web</h2>
+    <p>Creamos páginas web para empresas.</p>
+</div>
+```
+
+Podemos modificar su apariencia utilizando CSS:
+
+```css
+.tarjeta {
+    background-color: lightblue;
+    color: darkblue;
+    padding: 20px;
+    margin: 15px;
+    border: 2px solid blue;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.tarjeta h2 {
+    font-size: 24px;
+    text-align: center;
+}
+```
+
+#### ¿Qué hemos conseguido?
+
+- Cambiar el fondo y el color del texto.
+- Añadir espacio entre el contenido y el borde.
+- Separar la tarjeta de otros elementos.
+- Añadir un borde azul con esquinas redondeadas.
+- Establecer una anchura.
+- Modificar el tamaño y la alineación del título.
+
+#### Algunas unidades habituales
+
+| Unidad | Significado | Ejemplo |
+|---|---|---|
+| `px` | Píxeles CSS. | `padding: 20px;` |
+| `%` | Porcentaje respecto a una referencia. | `width: 80%;` |
+| `auto` | Valor calculado automáticamente por el navegador. | `margin: 20px auto;` |
+
+> **Recuerda:** muchas propiedades necesitan una unidad. Por ejemplo, `margin: 20px;` es correcto, mientras que `margin: 20;` no lo es.
+
 Las siguientes propiedades permiten cambiar el aspecto general de textos y cajas sin modificar la estructura HTML.
 
 #### Colores y fondos
